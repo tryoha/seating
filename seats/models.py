@@ -2,10 +2,10 @@ from django.db import models
 
 
 class Place(models.Model):
-    place = models.CharField("Название ресторана", max_length=60, unique=True)
+    name = models.CharField("Название ресторана", max_length=60, unique=True)
 
-    def __str__(self):
-        return self.place
+    def __str__(self):  # -> Any:
+        return self.name
 
     class Meta:
         verbose_name = "Ресторан"
@@ -13,7 +13,7 @@ class Place(models.Model):
 
 
 class Seat(models.Model):
-    seat = models.PositiveIntegerField("Место", unique=True)
+    seat = models.PositiveIntegerField("Место")
     available = models.BooleanField("Доступность", default=True)
     place = models.ForeignKey(Place, on_delete=models.CASCADE, related_name="seats")
 

@@ -5,7 +5,7 @@ from .models import Place, Seat
 
 @admin.register(Place)
 class PlaceAdmin(admin.ModelAdmin):
-    list_display = ("place",)
+    pass
 
 
 @admin.register(Seat)
@@ -14,6 +14,3 @@ class SeatAdmin(admin.ModelAdmin):
     list_editable = ("available",)
     list_filter = ("available", "place")
     search_fields = ("seat",)
-
-    def place(self, obj):
-        return obj.place
