@@ -1374,11 +1374,18 @@ svg[data-v-06dbd032] {
     font-size: 14px;
     padding: 10px
   }
+  .stars-1.dsktp, .stars-2.dsktp {
+    /* display: none; */
+    top: 100px;
+  }
 }
 
 @media screen and (max-width:767px) {
   .btn-primary-green {
     background-color: var(--color-muted-green)
+  }
+  .dsktp {
+    display: none;
   }
 }
 
