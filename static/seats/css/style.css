@@ -439,11 +439,10 @@ body {
 }
 
 .container {
-  height: 1080px;
   position: relative;
-  max-width: 100vw;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 .container h1 {
@@ -1317,8 +1316,13 @@ svg[data-v-06dbd032] {
 
 @media (max-width:1280px) {
   .main-menu__list[data-v-37affc4c] {
-    display: none
+    display: none;
   }
+
+  .dsktp {
+    display: none;
+  }
+  
 }
 
 .btn {
@@ -1388,6 +1392,7 @@ svg[data-v-06dbd032] {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  font-family: Montserrat, sans-serif;
 }
 
 
@@ -1397,6 +1402,7 @@ svg[data-v-06dbd032] {
   flex-direction: column;
   width: 641px;
   text-align: center;
+  font-weight: 300;
 }
 
 .rest__btns {
@@ -1414,3 +1420,158 @@ svg[data-v-06dbd032] {
   font-size: 18px;
   padding: 15px 14.5px;
 }
+
+.rassadka {
+  margin-top: 39px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.rassadka__l {
+  margin: 74px 84px 0 0;
+}
+.rassadka__r {
+  margin: 74px 0 0 84px;
+  display: flex;
+  flex-direction: column;
+}
+
+.rassadka__legend {
+  margin-top: 135px;
+}
+
+.places {
+  display: flex;
+  padding: 29px 0 62px 0;
+  width: 694px;
+}
+
+.places__container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  text-align: center;
+}
+
+.places__title {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.places__text {
+  font-weight: 300;
+}
+
+.places__btns {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 25px;
+}
+
+.places__btns a {
+  text-decoration: none;
+}
+
+.places__btn {
+  padding: 15px 34.5px;
+  border-radius: 200px;
+}
+
+.places__btn_active {
+  background-color: #E1E1E1;
+}
+
+.sun {  
+  position: absolute;
+  left: 0;
+  top: 17px;
+}
+
+.stars-1 {
+  position: absolute;
+  left: 318px;
+  top: 151px;
+}
+
+.stars-2 {
+  position: absolute;
+  right: 308px;
+  top: 151px;
+}
+
+.constellation {
+  position: absolute;
+  right: 37.1px;
+  top: 139px;
+}
+
+.stars-3 {
+  position: absolute;
+  right: 59px;
+  top: 444px;
+}
+
+.star {
+  position: absolute;
+  right: 31.1px;
+  top: 709px;
+}
+
+.moon {
+  position: absolute;
+  right: 30.54px;
+  top: 829px;
+}
+
+.stars-4 {
+  position: absolute;
+  right: 253px;
+  top: 975px;
+}
+
+.stars-5 {
+  position: absolute;
+  left: 234px;
+  top: 975px;
+}
+
+.hand {
+  position: absolute;
+  left: 52px;
+  top: 830px;
+}
+
+.stars-6 {
+  position: absolute;
+  left: 61px;
+  top: 338px;
+}
+
+.rassadka__legend_dwn {
+  position: absolute;
+  right: 283px;
+  top: 852px;
+}
+
+.rassadka_mu {
+  display: flex;
+  flex-direction: column;
+  margin: 39px 0 49px 0;
+  align-items: center;
+  width: 100%;
+}
+
+.rassadka__svg {
+  min-width: 800px;
+  overflow: auto;
+}
+
+.rassadka__svg svg {
+  overflow: hidden;
+}
+
+.rassadka__mu {
+  padding: 49px 0 0 0; 
+}
+
+
