@@ -159,9 +159,9 @@ cython_debug/
 #  option (not recommended) you can uncomment the following to ignore the entire idea folder.
 .idea/
 
-# Static & media
-static/
-media/
+# # Static & media
+# static/
+# media/
 
 # Only for Development only
 **/migrations/**
