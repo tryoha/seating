@@ -1659,7 +1659,8 @@ svg[data-v-06dbd032] {
     display: none;
   }
 
-  .rassadka {
+  .rassadka,
+  .rassadka_mu {
     max-width: 100%;
   }
 
@@ -1799,5 +1800,19 @@ svg[data-v-06dbd032] {
 
   .rassadka__bal svg {
     min-width: 836px;
+  }
+
+  .rassadka__mu {
+    display: none;
+  }
+
+  .rassadka_mu {
+    gap: 23px;
+    margin: 39px 0 0 0;
+  }
+
+  .rassadka__tavrika svg {
+    min-width: 1044px;
+
   }
 }
