@@ -1806,6 +1806,14 @@ svg[data-v-06dbd032] {
     min-width: 836px;
   }
 
+  .rassadka__grill svg {
+    min-width: 906px;
+  }
+
+  .rassadka__man svg {
+    min-width: 906px;
+  }
+
   .rassadka__mu {
     display: none;
   }
