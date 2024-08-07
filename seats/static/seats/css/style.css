@@ -1157,7 +1157,7 @@ svg[data-v-06dbd032] {
   }
 
   .bottom-menu__popup-item[data-v-89cc7679] {
-    list-style: none
+    list-style: none;
   }
 
   .bottom-menu__hotel-link[data-v-89cc7679] {
@@ -1169,7 +1169,7 @@ svg[data-v-06dbd032] {
     flex-direction: column;
     gap: 8px;
     padding: 0;
-    text-decoration: none
+    text-decoration: none;
   }
 
   .bottom-menu__hotel-name[data-v-89cc7679] {
@@ -1180,38 +1180,38 @@ svg[data-v-06dbd032] {
     line-height: normal;
     margin: 0;
     text-align: center;
-    width: 120%
+    width: 120%;
   }
 
   .bottom-menu__hotel-img[data-v-89cc7679] {
     height: 50px;
     -o-object-fit: cover;
     object-fit: cover;
-    width: 50px
+    width: 50px;
   }
 
   .bottom-menu__contact-link[data-v-89cc7679] {
     color: unset;
     display: flex;
-    text-decoration: none
+    text-decoration: none;
   }
 
   .bottom-menu__contact-img[data-v-89cc7679] {
     height: 47px;
     -o-object-fit: cover;
     object-fit: cover;
-    width: 47px
+    width: 47px;
   }
 }
 
 .bottom-space[data-v-326a56da] {
-  display: none
+  display: none;
 }
 
 @media screen and (max-width:767px) {
   .bottom-space[data-v-326a56da] {
     display: block;
-    height: 61px
+    height: 61px;
   }
 }
 
@@ -1222,7 +1222,7 @@ svg[data-v-06dbd032] {
   flex-direction: column;
   height: 32px;
   justify-content: space-around;
-  width: 32px
+  width: 32px;
 }
 
 .hamburger-icon__line[data-v-d0cf0ce2] {
@@ -1239,14 +1239,14 @@ svg[data-v-06dbd032] {
 
 
 .main-menu[data-v-37affc4c] {
-  height: 60px
+  height: 60px;
 }
 
 .main-menu__list[data-v-37affc4c] {
   gap: 31px;
   list-style-type: none;
   margin: 0;
-  padding: 0
+  padding: 0;
 }
 
 .main-menu__item[data-v-37affc4c],
@@ -1258,12 +1258,12 @@ svg[data-v-06dbd032] {
 
 .main-menu__item[data-v-37affc4c] {
   font-size: 18px;
-  font-weight: 500
+  font-weight: 500;
 }
 
 .main-menu__item[data-v-37affc4c],
 .main-menu__item_has-submenu[data-v-37affc4c] {
-  position: relative
+  position: relative;
 }
 
 .main-menu__item_has-submenu[data-v-37affc4c]:after {
@@ -1273,7 +1273,7 @@ svg[data-v-06dbd032] {
   position: absolute;
   right: 0;
   top: 100%;
-  z-index: 10
+  z-index: 10;
 }
 
 .main-menu__link[data-v-37affc4c] {
@@ -1282,11 +1282,11 @@ svg[data-v-06dbd032] {
   display: block;
   position: relative;
   text-align: center;
-  text-decoration: none
+  text-decoration: none;
 }
 
 .main-menu__link[data-v-37affc4c]:hover {
-  color: var(--color-sand)
+  color: var(--color-sand);
 }
 
 .submenu[data-v-37affc4c] {
@@ -1305,7 +1305,7 @@ svg[data-v-06dbd032] {
   padding: 5px 20px 30px;
   position: absolute;
   top: calc(100% + 30px);
-  z-index: 20
+  z-index: 20;
 }
 
 .submenu__link[data-v-37affc4c] {
@@ -1315,7 +1315,7 @@ svg[data-v-06dbd032] {
   padding: 0;
   text-decoration: none;
   transition: all .3s ease;
-  white-space: nowrap
+  white-space: nowrap;
 }
 
 .submenu__link[data-v-37affc4c]:hover {
@@ -1478,8 +1478,6 @@ svg[data-v-06dbd032] {
   margin-top: 39px;
   display: flex;
   justify-content: space-between;
-  overflow: auto;
-  max-width: 100%;
 }
 
 .rassadka__l {
@@ -1587,9 +1585,7 @@ svg[data-v-06dbd032] {
 }
 
 .stars-5 {
-  position: absolute;
-  left: 234px;
-  top: 975px;
+  display: none;
 }
 
 .hand {
@@ -1659,6 +1655,14 @@ svg[data-v-06dbd032] {
     max-height: calc(442px - 3%);
   }
 
+  .stars-7 {
+    display: none;
+  }
+
+  .rassadka {
+    max-width: 100%;
+  }
+
   .rassadka__legend_dwn {
     top: 410px;
   }
@@ -1705,6 +1709,14 @@ svg[data-v-06dbd032] {
   z-index: 20;
 }
 
+.rassadka_m {
+  display: none;
+}
+
+.legend__bal {
+  display: none;
+}
+
 @media (max-width: 699px) {
   .header__wrapper[data-v-37affc4c] {
     gap: 20px;
@@ -1715,11 +1727,27 @@ svg[data-v-06dbd032] {
   }
 
   .rest__title img {
-    height: 33px;
+    height: 22px;
   }
 
   .rest__descr {
     padding: 0 27px 5px;
+  }
+
+  .rassadka {
+    flex-direction: column;
+    gap: 23px;
+    margin-top: 54px;
+  }
+
+  .rassadka_m {
+    display: block;
+    align-self: center;
+  }
+
+  .rassadka__svg {
+    overflow: auto;
+    max-width: 100%;
   }
 
   .rassadka__rd {
@@ -1741,7 +1769,11 @@ svg[data-v-06dbd032] {
     margin: 0 17px;
   }
 
-  .stars-2 {}
+  .stars-7 {
+    max-width: 332.79px;
+    align-self: center;
+    display: flex;
+  }
 
   .sun {
     height: 172px;
@@ -1750,9 +1782,22 @@ svg[data-v-06dbd032] {
   }
 
   .constellation {
-    width: 165px;
+    width: 164px;
     top: 66px;
     right: -6px;
   }
 
+  .rassadka__l,
+  .rassadka__r {
+    display: none;
+  }
+
+  .legend__bal {
+    display: initial;
+    margin-top: -10px;
+  }
+
+  .rassadka__bal svg {
+    min-width: 836px;
+  }
 }
