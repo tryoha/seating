@@ -476,7 +476,7 @@ template {
 body {
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
+  max-width: 100dvw;
 }
 
 .container {
@@ -1441,7 +1441,7 @@ svg[data-v-06dbd032] {
 .page {
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
+  min-height: 100dvh;
   font-family: Montserrat, sans-serif;
 }
 
@@ -1699,7 +1699,7 @@ svg[data-v-06dbd032] {
   bottom: 0;
   font-family: Gilroy, sans-serif;
   font-style: normal;
-  height: 100vh;
+  height: 100dvh;
   justify-content: flex-start;
   left: 0;
   line-height: normal;
@@ -1715,6 +1715,10 @@ svg[data-v-06dbd032] {
 }
 
 .legend__bal {
+  display: none;
+}
+
+.stars-7 {
   display: none;
 }
 
