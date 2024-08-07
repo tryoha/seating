@@ -1697,7 +1697,7 @@ svg[data-v-06dbd032] {
   backdrop-filter: blur(15px);
   background: rgba(0, 0, 0, .8);
   bottom: 0;
-  font-family: Gilroy, sans-serif;
+  font-family: Montserrat, sans-serif;
   font-style: normal;
   height: 100dvh;
   justify-content: flex-start;
@@ -1708,6 +1708,94 @@ svg[data-v-06dbd032] {
   top: 0;
   width: 100vw;
   z-index: 20;
+}
+
+.fs-menu__close-icon[data-v-6bc6fa74]:hover {
+  opacity: .8;
+  transform: scale(1.1);
+}
+
+.fs-menu__close-icon[data-v-6bc6fa74] {
+  cursor: pointer;
+  height: 20px;
+  left: 38px;
+  position: absolute;
+  top: 34px;
+  transition: all .3s ease;
+  width: 20px;
+}
+
+.fs-menu__logo[data-v-6bc6fa74] {
+  display: block;
+  height: 40px;
+  margin: 38px auto 47px;
+  -o-object-fit: contain;
+  object-fit: contain;
+  width: auto;
+  width: 37vw;
+}
+
+.fs-menu__list_main[data-v-6bc6fa74] {
+  height: 100%;
+  overflow-y: auto;
+  padding: 0 50px;
+}
+
+.fs-menu__child-list[data-v-6bc6fa74], 
+.fs-menu__list[data-v-6bc6fa74] {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.fs-menu__item-wrapper[data-v-6bc6fa74] {
+  align-items: center;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.fs-menu__child-list[data-v-6bc6fa74], .fs-menu__list[data-v-6bc6fa74] {
+  list-style: none;
+}
+
+.fs-menu__child-link[data-v-6bc6fa74], .fs-menu__link[data-v-6bc6fa74] {
+  color: var(--color-white);
+  display: block;
+  font-size: 18px;
+  font-weight: 400;
+  text-decoration: none;
+  transition: color .3s ease;
+}
+
+.fs-menu__link[data-v-6bc6fa74]:hover {
+  color: var(--color-sand);
+}
+
+.fs-menu__list_main[data-v-6bc6fa74] {
+  height: 100%;
+  overflow-y: auto;
+  padding: 0 50px;
+}
+
+.fs-menu__list-container[data-v-6bc6fa74] {
+  height: calc(100dvh - 70px);
+  justify-content: space-between;
+  text-align: center;
+  width: calc(100vw - 60px);
+}
+
+.fs-menu__button[data-v-6bc6fa74] {
+  background-color: transparent;
+  border: 1px solid var(--color-white);
+  height: 50px;
+  margin-top: 50px;
+  padding: 15px 25px;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 
 .rassadka_m {
@@ -1871,3 +1959,10 @@ svg[data-v-06dbd032] {
 
 
 
+.fs-menu.mobile-menu-hidden {
+  display: none;
+}
+
+.container img {
+  z-index: -1;
+}
