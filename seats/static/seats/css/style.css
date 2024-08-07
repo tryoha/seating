@@ -413,14 +413,14 @@ template {
   font-family: Geometria;
   font-style: normal;
   font-weight: 300;
-  src: url(/static/seats/fonts/Geometria/Geometria-Light.fc12edd1.woff2) format("woff2"), url(/static/seats/fonts/Geometria/Geometria-Light.2bb85bab.woff) format("woff"), url(/static/seats/fonts/Geometria/Geometria-Light.16eea449.ttf) format("truetype")
+  src: url('/static/seats/fonts/Geometria/Geometria-Light.fc12edd1.woff2') format("woff2"), url('/static/seats/fonts/Geometria/Geometria-Light.2bb85bab.woff') format("woff"), url('/static/seats/fonts/Geometria/Geometria-Light.16eea449.ttf') format("truetype")
 }
 
 @font-face {
   font-family: Geometria;
   font-style: normal;
   font-weight: 400;
-  src: url(/static/seats/fonts/Geometria/Geometria-Regular.cbbe0d50.woff2) format("woff2"), url(/static/seats/fonts/Geometria/Geometria-Regular.6eea1a09.woff) format("woff"), url(/static/seats/fonts/Geometria/Geometria-Regular.c61efec6.ttf) format("truetype")
+  src: url('/static/seats/fonts/Geometria/Geometria-Regular.cbbe0d50.woff2') format("woff2"), url('/static/seats/fonts/Geometria/Geometria-Regular.6eea1a09.woff') format("woff"), url('/static/seats/fonts/Geometria/Geometria-Regular.c61efec6.ttf') format("truetype")
 }
 
 
@@ -428,9 +428,50 @@ template {
   font-family: Geometria;
   font-style: normal;
   font-weight: 500;
-  src: url(/static/seats/fonts/Geometria/Geometria-Medium.6f553a84.woff2) format("woff2"), url(/static/seats/fonts/Geometria/Geometria-Medium.13546f61.woff) format("woff"), url(/static/seats/fonts/Geometria/Geometria-Medium.c3fb72f1.ttf) format("truetype")
+  src: url('/static/seats/fonts/Geometria/Geometria-Medium.6f553a84.woff2') format("woff2"), url('/static/seats/fonts/Geometria/Geometria-Medium.13546f61.woff') format("woff"), url('/static/seats/fonts/Geometria/Geometria-Medium.c3fb72f1.ttf') format("truetype")
 }
 
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  src: url('/static/seats/fonts/Montserrat/Montserrat-Regular.woff2') format('woff2'), url('/static/seats/fonts/Montserrat/Montserrat-Regular.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  src: url('/static/seats/fonts/Montserrat/Montserrat-Medium.woff2') format('woff2'), url('/static/seats/fonts/Montserrat/Montserrat-Medium.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 100;
+  src: url('/static/seats/fonts/Montserrat/Montserrat-Thin.woff2') format('woff2'), url('/static/seats/fonts/Montserrat/Montserrat-Thin.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  src: url('/static/seats/fonts/Montserrat/Montserrat-SemiBold.woff2') format('woff2'), url('/static/seats/fonts/Montserrat/Montserrat-SemiBold.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  src: url('/static/seats/fonts/Montserrat/Montserrat-Bold.woff2') format('woff2'), url('/static/seats/fonts/Montserrat/Montserrat-Bold.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 300;
+  src: url('/static/seats/fonts/Montserrat/Montserrat-Light.woff2') format('woff2'), url('/static/seats/fonts/Montserrat/Montserrat-Light.woff') format('woff');
+}
 
 body {
   display: flex;
@@ -443,6 +484,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  max-width: 100%;
 }
 
 .container h1 {
@@ -475,10 +517,13 @@ body {
   backdrop-filter: blur(15px);
   content: "";
   height: 100%;
-  inset: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
   position: absolute;
   width: 100%;
-  z-index: -1
+  z-index: -1;
 }
 
 .header__space[data-v-37affc4c] {
@@ -1374,7 +1419,9 @@ svg[data-v-06dbd032] {
     font-size: 14px;
     padding: 10px
   }
-  .stars-1.dsktp, .stars-2.dsktp {
+
+  .stars-1.dsktp,
+  .stars-2.dsktp {
     /* display: none; */
     top: 100px;
   }
@@ -1384,6 +1431,7 @@ svg[data-v-06dbd032] {
   .btn-primary-green {
     background-color: var(--color-muted-green)
   }
+
   .dsktp {
     display: none;
   }
@@ -1405,11 +1453,14 @@ svg[data-v-06dbd032] {
   width: 641px;
   text-align: center;
   font-weight: 300;
+  max-width: 100%;
 }
 
 .rest__btns {
   display: flex;
   justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 15px;
 }
 
 .rest__btns a {
@@ -1427,11 +1478,14 @@ svg[data-v-06dbd032] {
   margin-top: 39px;
   display: flex;
   justify-content: space-between;
+  overflow: auto;
+  max-width: 100%;
 }
 
 .rassadka__l {
   margin: 74px 84px 0 0;
 }
+
 .rassadka__r {
   margin: 74px 0 0 84px;
   display: flex;
@@ -1446,6 +1500,7 @@ svg[data-v-06dbd032] {
   display: flex;
   padding: 29px 0 62px 0;
   width: 694px;
+  max-width: 100%;
 }
 
 .places__container {
@@ -1483,7 +1538,7 @@ svg[data-v-06dbd032] {
   background-color: #E1E1E1;
 }
 
-.sun {  
+.sun {
   position: absolute;
   left: 0;
   top: 17px;
@@ -1563,5 +1618,141 @@ svg[data-v-06dbd032] {
 }
 
 .rassadka__mu {
-  padding: 49px 0 0 0; 
+  padding: 49px 0 0 0;
+}
+
+
+@media screen and (max-width:1536px) {
+  .sun {
+    max-width: calc(308px - 5%);
+  }
+
+  .stars-1 {
+    max-width: calc(338px - 5%);
+  }
+
+  .stars-2 {
+    max-width: calc(344px - 5%);
+  }
+
+  .constellation {
+    max-width: calc(336px - 5%);
+  }
+
+  .stars-3 {
+    max-height: calc(265px - 3%);
+  }
+
+  .star {
+    max-width: calc(85px - 1%);
+  }
+
+  .moon {
+    max-width: calc(179px - 1%);
+  }
+
+  .hand {
+    max-width: calc(148px - 1%);
+  }
+
+  .stars-6 {
+    max-height: calc(442px - 3%);
+  }
+
+  .rassadka__legend_dwn {
+    top: 410px;
+  }
+
+  .rassadka__l {
+    display: flex;
+    flex-direction: column;
+    max-width: calc(172px - 3%);
+    margin: 74px 0 0 0;
+  }
+
+  .rassadka__r {
+    max-width: calc(186px - 3%);
+    margin: 74px 0 0 0;
+  }
+
+  .rassadka__legend {
+    margin-top: 80px;
+  }
+}
+
+.fs-menu[data-v-6bc6fa74],
+.fs-menu__list-container[data-v-6bc6fa74] {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.fs-menu[data-v-6bc6fa74] {
+  -webkit-backdrop-filter: blur(15px);
+  backdrop-filter: blur(15px);
+  background: rgba(0, 0, 0, .8);
+  bottom: 0;
+  font-family: Gilroy, sans-serif;
+  font-style: normal;
+  height: 100vh;
+  justify-content: flex-start;
+  left: 0;
+  line-height: normal;
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 100vw;
+  z-index: 20;
+}
+
+@media (max-width: 699px) {
+  .header__wrapper[data-v-37affc4c] {
+    gap: 20px;
+  }
+
+  .rest {
+    padding-top: 172px;
+  }
+
+  .rest__title img {
+    height: 33px;
+  }
+
+  .rest__descr {
+    padding: 0 27px 5px;
+  }
+
+  .rassadka__rd {
+    display: none;
+  }
+
+  .places {
+    padding: 23px 0 30px 0;
+  }
+
+  .places__btns {
+    overflow: auto;
+    gap: 25px;
+    justify-content: initial;
+  }
+
+  .places__title,
+  .places__text {
+    margin: 0 17px;
+  }
+
+  .stars-2 {}
+
+  .sun {
+    height: 172px;
+    top: 14px;
+    left: -10px;
+  }
+
+  .constellation {
+    width: 165px;
+    top: 66px;
+    right: -6px;
+  }
+
 }
