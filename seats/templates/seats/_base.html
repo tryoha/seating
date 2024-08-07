@@ -138,8 +138,10 @@
      </footer>
      <div class="bottom-menu" data-v-89cc7679>
         <ul class="bottom-menu__list" data-v-89cc7679>
-           <li class="bottom-menu__item" data-v-89cc7679><a target="_blank" href="https://rivierasunrise.ru/booking" class="bottom-menu__link"
-                 data-v-89cc7679><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 22 24" fill="none"
+           <li class="bottom-menu__item" data-v-89cc7679>
+            <a target="_blank" href="https://rivierasunrise.ru/booking" class="bottom-menu__link"
+                 data-v-89cc7679>
+                 <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 22 24" fill="none"
                     class="bottom-menu__icon bottom-menu__icon_type_calendar" data-v-89cc7679 data-v-d37dcaaa>
                     <path d="M6.46191 1V4.3135" stroke="currentColor" stroke-width="1.78453"
                        stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" data-v-d37dcaaa>
@@ -168,8 +170,10 @@
                        stroke-linecap="round" stroke-linejoin="round" data-v-d37dcaaa></path>
                  </svg>
                  <p class="bottom-menu__title" data-v-89cc7679>Бронировать</p>
-              </a></li>
-           <li class="bottom-menu__item" data-v-89cc7679><svg xmlns="http://www.w3.org/2000/svg"
+              </a>
+            </li>
+           <li class="bottom-menu__item" id="popup-hotels" data-v-89cc7679>
+            <svg xmlns="http://www.w3.org/2000/svg"
                  viewbox="0 0 22 20" fill="none" class="bottom-menu__icon bottom-menu__icon_type_star"
                  data-v-89cc7679 data-v-14a7781f>
                  <path
@@ -194,7 +198,7 @@
                  </svg>
                  <p class="bottom-menu__title" data-v-89cc7679>Позвонить</p>
               </a></li>
-           <li class="bottom-menu__item" data-v-89cc7679><svg xmlns="http://www.w3.org/2000/svg"
+           <li class="bottom-menu__item" id="popup-contacts" data-v-89cc7679><svg xmlns="http://www.w3.org/2000/svg"
                  viewbox="0 0 22 22" fill="none" class="bottom-menu__icon bottom-menu__icon_type_message"
                  data-v-89cc7679 data-v-06dbd032>
                  <path
@@ -212,6 +216,57 @@
            </li>
         </ul>
      </div>
+      <div data-v-222f9f8f="" data-v-89cc7679="" id="popup-overlay" class="popup-overlay closed" style="--desktop-width: auto; --desktop-height: auto; --tablet-width: auto; --tablet-maxheight: unset; --mobile-maxheight: unset; --mobile-btn-display: none; --mobile-width: auto; --mobile-height: auto;">
+         <div data-v-222f9f8f="" class="popup">
+            <div data-v-222f9f8f="" class="popup__content">
+               <ul data-v-89cc7679="" class="bottom-menu__popup-list bottom-menu__popup-list_type_contacts">
+                  <li data-v-89cc7679="" class="bottom-menu__popup-item">
+                     <a data-v-89cc7679="" href="https://chatapp.online/wa-redirect/?phone=79789154111&amp;text=Riviera" rel="noopener noreferrer" target="_blank" class="bottom-menu__contact-link">
+                        <img data-v-89cc7679="" src="https://sites.upro.group/upload/messengers/Frame-27-66054f45732f9-1-66751272a56d6.png" alt="WA" class="bottom-menu__contact-img">
+                     </a>
+                  </li>
+                  <li data-v-89cc7679="" class="bottom-menu__popup-item">
+                     <a data-v-89cc7679="" href="https://vk.com/rivierasunrise?roistat_visit=824997" rel="noopener noreferrer" target="_blank" class="bottom-menu__contact-link">
+                        <img data-v-89cc7679="" src="https://sites.upro.group/upload/messengers/vk-66067a9d34038-1-667512b32f5a5.png" alt="VK" class="bottom-menu__contact-img">
+                     </a>
+                  </li>
+               </ul>
+            </div>
+            <button data-v-222f9f8f="" id="popup__close-button" class="popup__close-button">
+               <svg data-v-222f9f8f="" class="popup__close-img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 46 46" fill="none">
+                  <path data-v-222f9f8f="" d="M22.865 43.8648C34.3407 43.8648 43.73 34.4755 43.73 22.9998C43.73 11.524 34.3407 2.13477 22.865 2.13477C11.3892 2.13477 2 11.524 2 22.9998C2 34.4755 11.3892 43.8648 22.865 43.8648Z" stroke="currentColor" stroke-width="3.12975" stroke-linecap="round" stroke-linejoin="round"></path>
+                  <path data-v-222f9f8f="" d="M16.9609 28.9042L28.7706 17.0947" stroke="currentColor" stroke-width="3.12975" stroke-linecap="round" stroke-linejoin="round"></path><path data-v-222f9f8f="" d="M28.7706 28.9042L16.9609 17.0947" stroke="currentColor" stroke-width="3.12975" stroke-linecap="round" stroke-linejoin="round"></path>
+               </svg>
+            </button>
+         </div>
+      </div>
+      <div data-v-222f9f8f="" id="popup-overlay-hotels" data-v-89cc7679="" class="popup-overlay closed"
+      style="--desktop-width: auto; --desktop-height: auto; --tablet-width: auto; --tablet-maxheight: unset; --mobile-maxheight: unset; --mobile-btn-display: none; --mobile-width: auto; --mobile-height: auto;">
+      <div data-v-222f9f8f="" class="popup">
+         <div data-v-222f9f8f="" class="popup__content">
+               <ul data-v-89cc7679="" class="bottom-menu__popup-list">
+                  <li data-v-89cc7679="" class="bottom-menu__popup-item"><a data-v-89cc7679="" href="https://minvody.net"
+                           rel="noopener noreferrer" target="_blank" class="bottom-menu__hotel-link"><img
+                              data-v-89cc7679=""
+                              src="https://sites.upro.group/upload/our-sites/MINVOD-66056cfb7e92e-1-6675120be5e82.svg"
+                              alt="Санаторий «Елизавета – Минеральные воды» 4*" class="bottom-menu__hotel-img"><span
+                              data-v-89cc7679="" class="bottom-menu__hotel-name">Санаторий «Елизавета – Минеральные воды»
+                              4*</span></a></li>
+                  <li data-v-89cc7679="" class="bottom-menu__popup-item"><a data-v-89cc7679=""
+                           href="https://galapalmira.ru" rel="noopener noreferrer" target="_blank"
+                           class="bottom-menu__hotel-link"><img data-v-89cc7679=""
+                              src="https://sites.upro.group/upload/our-sites/gala-palmira-66056e32c7e3f-1-66751220277bf.svg"
+                              alt="Отель «Gala Pamira» 3*" class="bottom-menu__hotel-img"><span data-v-89cc7679=""
+                              class="bottom-menu__hotel-name">Отель «Gala Pamira» 3*</span></a></li>
+                  <li data-v-89cc7679="" class="bottom-menu__popup-item"><a data-v-89cc7679=""
+                           href="https://zhuravli-hotel.ru" rel="noopener noreferrer" target="_blank"
+                           class="bottom-menu__hotel-link"><img data-v-89cc7679=""
+                              src="https://sites.upro.group/upload/our-sites/Zhuravli-66056e372b497-1-66751232bf45d.svg"
+                              alt="Отель «Журавли» 4*" class="bottom-menu__hotel-img"><span data-v-89cc7679=""
+                              class="bottom-menu__hotel-name">Отель «Журавли» 4*</span></a></li>
+               </ul>
+   </div>
+
      <div class="bottom-space" data-v-55d2511d data-v-326a56da></div>
 </div>
 
