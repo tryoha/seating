@@ -15,8 +15,8 @@ function displayContactsOverlay() {
 
 
 function hideContactsOverlay() {
-  contactsOverlay.classList.remove("opened");
-  contactsOverlay.classList.add("closed");
+    cntctsOverlay.classList.remove("opened");
+    cntctsOverlay.classList.add("closed");
 }
 
 function openHotelOverlay() {
