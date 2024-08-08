@@ -1966,3 +1966,21 @@ svg[data-v-06dbd032] {
 .container img {
   z-index: -1;
 }
+
+
+@media screen and (max-width: 1400px)  {
+  .stars-1.dsktp, 
+  .stars-2.dsktp {
+    display: none;
+  }
+
+}
+
+@media screen and (max-width: 1400px)  {
+  .stars-3.dsktp, 
+  .star.dsktp, 
+  .stars-6.dsktp {
+    display: none;
+  }
+
+}
