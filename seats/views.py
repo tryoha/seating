@@ -1,3 +1,4 @@
+from django.db.models.manager import BaseManager
 from django.shortcuts import render
 
 from .models import Place, Seat
@@ -9,8 +10,9 @@ def index(request):
 
 
 def ballroom_index(request):
+    places = Place.objects.filter(available=True)
     seats = Seat.objects.filter(place__name="ballroom")
-    context = {}
+    context: dict[str, BaseManager[Place]] = {"places": places}
 
     for seat in seats:
         context[seat.seat] = {"place": seat.place, "available": seat.available}
@@ -19,8 +21,9 @@ def ballroom_index(request):
 
 
 def grilled_index(request):
+    places = Place.objects.filter(available=True)
     seats = Seat.objects.filter(place__name="grilled")
-    context = {}
+    context: dict[str, BaseManager[Place]] = {"places": places}
 
     for seat in seats:
         context[seat.seat] = {"place": seat.place, "available": seat.available}
@@ -29,8 +32,9 @@ def grilled_index(request):
 
 
 def mangup_index(request):
+    places = Place.objects.filter(available=True)
     seats = Seat.objects.filter(place__name="mangup")
-    context = {}
+    context: dict[str, BaseManager[Place]] = {"places": places}
 
     for seat in seats:
         context[seat.seat] = {"place": seat.place, "available": seat.available}
@@ -39,8 +43,9 @@ def mangup_index(request):
 
 
 def tavrika_index(request):
+    places = Place.objects.filter(available=True)
     seats = Seat.objects.filter(place__name="tavrika")
-    context = {}
+    context: dict[str, BaseManager[Place]] = {"places": places}
 
     for seat in seats:
         context[seat.seat] = {"place": seat.place, "available": seat.available}

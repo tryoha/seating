@@ -387,26 +387,13 @@
                 Посмотрите другие залы Riviera Sunrise Resort & SPA 5* 
             </div>
             <div class="places__btns">
-                <a href="{% url 'seats:ballroom' %}" class="">
-                    <div class="places__btn btn-primary places__btn_active">
-                        BALLROOM
+                {% for place in places %}
+                <a href="/{{ place.slug }}" class="">
+                    <div class="places__btn btn-primary {% if place.slug == 'ballroom' %}places__btn_active{% endif %}">
+                        {{ place.name | upper }}
                     </div>
                 </a>
-                <a href="{% url 'seats:grilled' %}" class="">
-                    <div class="places__btn btn-primary">
-                        THE&nbsp;GRILLED
-                    </div>
-                </a>
-                <a href="{% url 'seats:tavrika' %}" class="">
-                    <div class="places__btn btn-primary">
-                        TAVRIKA
-                    </div>
-                </a>
-                <a href="{% url 'seats:mangup' %}" class="">
-                    <div class="places__btn btn-primary">
-                        MANGUP
-                    </div>
-                </a>
+                {% endfor %}
             </div>
         </div>
     </div>

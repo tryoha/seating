@@ -5,7 +5,10 @@ from .models import Place, Seat
 
 @admin.register(Place)
 class PlaceAdmin(admin.ModelAdmin):
-    pass
+    list_display = ("name", "available")
+    list_editable = ("available",)
+    list_filter = ("available",)
+    search_fields = ("name",)
 
 
 @admin.register(Seat)

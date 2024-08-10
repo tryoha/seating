@@ -1,6 +1,6 @@
 from django.urls import path
 
-from .views import ballroom_index, grilled_index, index, mangup_index, tavrika_index
+from .views import ballroom_index, grilled_index, mangup_index, tavrika_index
 
 app_name = "seats"
 

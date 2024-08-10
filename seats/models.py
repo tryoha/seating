@@ -3,6 +3,8 @@ from django.db import models
 
 class Place(models.Model):
     name = models.CharField("Название ресторана", max_length=60, unique=True)
+    available = models.BooleanField("Доступность", default=True)
+    slug = models.SlugField("Слаг", unique=True)
 
     def __str__(self):  # -> Any:
         return self.name
