@@ -11,7 +11,7 @@ def index(request):
 
 def ballroom_index(request):
     places = Place.objects.filter(available=True)
-    seats = Seat.objects.filter(place__name="ballroom")
+    seats = Seat.objects.filter(place__name="Ballroom")
     context: dict[str, BaseManager[Place]] = {"places": places}
 
     for seat in seats:
@@ -22,7 +22,7 @@ def ballroom_index(request):
 
 def grilled_index(request):
     places = Place.objects.filter(available=True)
-    seats = Seat.objects.filter(place__name="grilled")
+    seats = Seat.objects.filter(place__name="The grilled")
     context: dict[str, BaseManager[Place]] = {"places": places}
 
     for seat in seats:
@@ -33,7 +33,7 @@ def grilled_index(request):
 
 def mangup_index(request):
     places = Place.objects.filter(available=True)
-    seats = Seat.objects.filter(place__name="mangup")
+    seats = Seat.objects.filter(place__name="Mangup")
     context: dict[str, BaseManager[Place]] = {"places": places}
 
     for seat in seats:
@@ -44,7 +44,7 @@ def mangup_index(request):
 
 def tavrika_index(request):
     places = Place.objects.filter(available=True)
-    seats = Seat.objects.filter(place__name="tavrika")
+    seats = Seat.objects.filter(place__name="Tavrika")
     context: dict[str, BaseManager[Place]] = {"places": places}
 
     for seat in seats:
