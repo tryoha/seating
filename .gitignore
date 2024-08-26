@@ -160,8 +160,8 @@ cython_debug/
 .idea/
 
 # # Static & media
-# static/
-# media/
+static/
+media/
 
 # Only for Development only
 **/migrations/**
