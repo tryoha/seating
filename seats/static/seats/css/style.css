@@ -1906,17 +1906,7 @@ svg[data-v-06dbd032] {
     display: flex;
   }
 
-  .sun {
-    height: 172px;
-    top: 14px;
-    left: -10px;
-  }
 
-  .constellation {
-    width: 164px;
-    top: 66px;
-    right: -6px;
-  }
 
   .rassadka__l,
   .rassadka__r {
@@ -2009,14 +1999,7 @@ svg[data-v-06dbd032] {
 @media screen and (max-width: 1400px) {
 
   .stars-1.dsktp,
-  .stars-2.dsktp {
-    display: none;
-  }
-
-}
-
-@media screen and (max-width: 1400px) {
-
+  .stars-2.dsktp,
   .stars-3.dsktp,
   .star.dsktp,
   .stars-6.dsktp,
@@ -2046,5 +2029,16 @@ svg[data-v-06dbd032] {
 @media screen and (max-width: 1250px) {
   .rassadka__legend_dwn {
     right: 150px;
+  }
+  .sun {
+    height: 172px;
+    top: 14px;
+    left: -10px;
+  }
+
+  .constellation {
+    width: 164px;
+    top: 66px;
+    right: -6px;
   }
 }
