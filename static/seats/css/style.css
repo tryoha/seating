@@ -1530,6 +1530,7 @@ svg[data-v-06dbd032] {
 .places__btn {
   padding: 15px 34.5px;
   border-radius: 200px;
+  text-wrap: nowrap;
 }
 
 .places__btn_active {

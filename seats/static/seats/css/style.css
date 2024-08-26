@@ -1475,9 +1475,10 @@ svg[data-v-06dbd032] {
 }
 
 .rassadka {
-  margin-top: 39px;
+  margin: 39px 20px 0 20px;
   display: flex;
   justify-content: space-between;
+  gap: 20px;
 }
 
 .rassadka__l {
@@ -1530,6 +1531,7 @@ svg[data-v-06dbd032] {
 .places__btn {
   padding: 15px 34.5px;
   border-radius: 200px;
+  text-wrap: nowrap;
 }
 
 .places__btn_active {
@@ -1540,48 +1542,56 @@ svg[data-v-06dbd032] {
   position: absolute;
   left: 0;
   top: 17px;
+  z-index: -1;
 }
 
 .stars-1 {
   position: absolute;
   left: 318px;
   top: 151px;
+  z-index: -1;
 }
 
 .stars-2 {
   position: absolute;
   right: 308px;
   top: 151px;
+  z-index: -1;
 }
 
 .constellation {
   position: absolute;
   right: 37.1px;
   top: 139px;
+  z-index: -1;
 }
 
 .stars-3 {
   position: absolute;
   right: 59px;
   top: 444px;
+  z-index: -1;
 }
 
 .star {
   position: absolute;
   right: 31.1px;
   top: 709px;
+  z-index: -1;
 }
 
 .moon {
   position: absolute;
   right: 30.54px;
   top: 829px;
+  z-index: -1;
 }
 
 .stars-4 {
   position: absolute;
   right: 253px;
   top: 975px;
+  z-index: -1;
 }
 
 .stars-5 {
@@ -1592,12 +1602,14 @@ svg[data-v-06dbd032] {
   position: absolute;
   left: 52px;
   top: 830px;
+  z-index: -1;
 }
 
 .stars-6 {
   position: absolute;
   left: 61px;
   top: 338px;
+  z-index: -1;
 }
 
 .rassadka__legend_dwn {
@@ -1662,10 +1674,6 @@ svg[data-v-06dbd032] {
   .rassadka,
   .rassadka_mu {
     max-width: 100%;
-  }
-
-  .rassadka__legend_dwn {
-    top: 410px;
   }
 
   .rassadka__l {
@@ -1812,6 +1820,34 @@ svg[data-v-06dbd032] {
   display: none;
 }
 
+.rest__back {
+  position: relative;
+}
+
+.rest__back-btn {
+  left: -287px;
+  bottom: 37px;
+  position: absolute;
+  color: #C8AA6D;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.rest__back-btn:hover {
+  color: #b48d40;
+}
+
+.rest__back a {
+  text-decoration: none;
+}
+
+.rest__back-btn::before {
+  content: url("../img/ballroom/arrow_l.svg");
+  margin-right: 5px;
+  top: 2px;
+  position: relative;
+}
+
 @media (max-width: 699px) {
   .header__wrapper[data-v-37affc4c] {
     gap: 20px;
@@ -1915,7 +1951,6 @@ svg[data-v-06dbd032] {
 
   .rassadka__tavrika svg {
     min-width: 1044px;
-
   }
 }
 
@@ -1984,8 +2019,32 @@ svg[data-v-06dbd032] {
 
   .stars-3.dsktp,
   .star.dsktp,
-  .stars-6.dsktp {
+  .stars-6.dsktp,
+  .moon.dsktp,
+  .hand.dsktp {
     display: none;
   }
 
+  .rest__back {
+    position: relative;
+    margin: 0 auto;
+    padding-top: 25px;
+  }
+
+  .rest__back-btn {
+    position: initial;
+  }
+
+}
+
+@media screen and (max-width: 1880px) {
+  .rassadka__legend_dwn {
+    top: 455px;
+  }
+}
+
+@media screen and (max-width: 1250px) {
+  .rassadka__legend_dwn {
+    right: 150px;
+  }
 }
