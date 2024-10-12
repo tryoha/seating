@@ -383,8 +383,8 @@ template {
 
 :root {
   --color-dark: #171717;
-  --color-sand: #c8aa6d;
-  --color-dark-sand: #b48d40;
+  --color-sand: #627692;
+  --color-dark-sand: #B1C0D9;
   --color-gray: #9b9b9b;
   --color-red: #db0000;
   --color-white: #fff;
@@ -1475,10 +1475,10 @@ svg[data-v-06dbd032] {
 }
 
 .rassadka {
-  margin: 39px 20px 0 20px;
+  margin: 40px auto 140px auto;
   display: flex;
-  justify-content: space-between;
   gap: 20px;
+  flex-direction: column;
 }
 
 .rassadka__l {
@@ -1627,6 +1627,47 @@ svg[data-v-06dbd032] {
 
 .rassadka__mu {
   padding: 49px 0 0 0;
+}
+
+.decor {
+  position: absolute;
+  z-index: -1;
+}
+.tl1 {
+  left: 0;
+}
+.tl2 {
+  left: 260px;
+}
+.tr1 {
+  right: 260px;
+}
+.tr2 {
+  right: 0;
+}
+.r1 {
+  top: 300px;
+  right: 0;
+}
+.r2 {
+  top: 550px;
+  right: 0;
+}
+.r3 {
+top: 820px;
+right: 0;
+}
+.l1 {
+  top: 300px;
+  left: 0;
+}
+.l2 {
+  top: 550px;
+  left: 0;
+}
+.l3 {
+  top: 820px;
+  left: 0;
 }
 
 
@@ -1809,7 +1850,9 @@ svg[data-v-06dbd032] {
 }
 
 .rassadka_m {
-  display: none;
+  position: absolute;
+  top: 1020px;
+  right: 820px;
 }
 
 .legend__bal {
@@ -1828,13 +1871,13 @@ svg[data-v-06dbd032] {
   left: -287px;
   bottom: 37px;
   position: absolute;
-  color: #C8AA6D;
+  color: var(--color-sand);
   font-weight: 500;
   font-size: 14px;
 }
 
 .rest__back-btn:hover {
-  color: #b48d40;
+  color: var(--color-dark-sand);
 }
 
 .rest__back a {
@@ -1842,7 +1885,7 @@ svg[data-v-06dbd032] {
 }
 
 .rest__back-btn::before {
-  content: url("../img/ballroom/arrow_l.svg");
+  content: url("../img/minvody/mv_arrow.svg");
   margin-right: 5px;
   top: 2px;
   position: relative;
@@ -2041,4 +2084,8 @@ svg[data-v-06dbd032] {
     top: 66px;
     right: -6px;
   }
+}
+
+.rassadka__mv {
+  align-self: center;
 }
