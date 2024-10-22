@@ -8,7 +8,7 @@
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
 
-html {
+ html {
   line-height: 1.15;
   /* 1 */
   -webkit-text-size-adjust: 100%;
@@ -383,8 +383,8 @@ template {
 
 :root {
   --color-dark: #171717;
-  --color-sand: #c8aa6d;
-  --color-dark-sand: #b48d40;
+  --color-sand: #627692;
+  --color-dark-sand: #B1C0D9;
   --color-gray: #9b9b9b;
   --color-red: #db0000;
   --color-white: #fff;
@@ -1475,9 +1475,10 @@ svg[data-v-06dbd032] {
 }
 
 .rassadka {
-  margin-top: 39px;
+  margin: 40px auto 140px auto;
   display: flex;
-  justify-content: space-between;
+  gap: 20px;
+  flex-direction: column;
 }
 
 .rassadka__l {
@@ -1541,48 +1542,56 @@ svg[data-v-06dbd032] {
   position: absolute;
   left: 0;
   top: 17px;
+  z-index: -1;
 }
 
 .stars-1 {
   position: absolute;
   left: 318px;
   top: 151px;
+  z-index: -1;
 }
 
 .stars-2 {
   position: absolute;
   right: 308px;
   top: 151px;
+  z-index: -1;
 }
 
 .constellation {
   position: absolute;
   right: 37.1px;
   top: 139px;
+  z-index: -1;
 }
 
 .stars-3 {
   position: absolute;
   right: 59px;
   top: 444px;
+  z-index: -1;
 }
 
 .star {
   position: absolute;
   right: 31.1px;
   top: 709px;
+  z-index: -1;
 }
 
 .moon {
   position: absolute;
   right: 30.54px;
   top: 829px;
+  z-index: -1;
 }
 
 .stars-4 {
   position: absolute;
   right: 253px;
   top: 975px;
+  z-index: -1;
 }
 
 .stars-5 {
@@ -1593,12 +1602,14 @@ svg[data-v-06dbd032] {
   position: absolute;
   left: 52px;
   top: 830px;
+  z-index: -1;
 }
 
 .stars-6 {
   position: absolute;
   left: 61px;
   top: 338px;
+  z-index: -1;
 }
 
 .rassadka__legend_dwn {
@@ -1618,6 +1629,59 @@ svg[data-v-06dbd032] {
   padding: 49px 0 0 0;
 }
 
+.decor {
+  position: absolute;
+  z-index: -1;
+}
+.tl1 {
+  left: 0;
+  top: 15px;
+}
+.tl2 {
+  left: 260px;
+  top: 15px;
+}
+.tr1 {
+  right: 260px;
+  top: 15px;
+}
+.tr2 {
+  right: 0;
+  top: 15px;
+}
+.r1 {
+  top: 300px;
+  right: 0;
+}
+.r2 {
+  top: 550px;
+  right: 0;
+}
+.r3 {
+top: 820px;
+right: 0;
+}
+.l1 {
+  top: 300px;
+  left: 0;
+}
+.l2 {
+  top: 550px;
+  left: 0;
+}
+.l3 {
+  top: 820px;
+  left: 0;
+}
+
+.rassadka_leg  {
+  display: flex;
+  align-self: center;
+  padding: 35px 0 54px;
+}
+.mak {
+  display: none;
+}
 
 @media screen and (max-width:1536px) {
   .sun {
@@ -1665,10 +1729,6 @@ svg[data-v-06dbd032] {
     max-width: 100%;
   }
 
-  .rassadka__legend_dwn {
-    top: 410px;
-  }
-
   .rassadka__l {
     display: flex;
     flex-direction: column;
@@ -1684,6 +1744,16 @@ svg[data-v-06dbd032] {
   .rassadka__legend {
     margin-top: 80px;
   }
+  
+  .tl1, .tr2 {
+    max-width: calc(143px + 6%);
+  }
+
+  .r1 {
+    max-width: calc(65px + 6%);
+    top: 425px;
+  }
+
 }
 
 .fs-menu[data-v-6bc6fa74],
@@ -1801,6 +1871,10 @@ svg[data-v-06dbd032] {
   width: fit-content;
 }
 
+.rassadka {
+  margin: 51px 250px 0;
+}
+
 .rassadka_m {
   display: none;
 }
@@ -1813,13 +1887,47 @@ svg[data-v-06dbd032] {
   display: none;
 }
 
+.rest__back {
+  position: relative;
+  left: 65px;
+}
+
+.rest__back-btn {
+  left: -287px;
+  bottom: 37px;
+  position: absolute;
+  color: var(--color-sand);
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.rest__back-btn:hover {
+  color: var(--color-dark-sand);
+}
+
+.rest__back a {
+  text-decoration: none;
+}
+
+.rest__back-btn::before {
+  content: url("../img/minvody/mv_arrow.svg");
+  margin-right: 5px;
+  top: 2px;
+  position: relative;
+}
+
+.brd {
+  display: none;
+}
+
+
 @media (max-width: 699px) {
   .header__wrapper[data-v-37affc4c] {
     gap: 20px;
   }
 
   .rest {
-    padding-top: 172px;
+    padding-top: 70px;
   }
 
   .rest__title img {
@@ -1833,12 +1941,13 @@ svg[data-v-06dbd032] {
   .rassadka {
     flex-direction: column;
     gap: 23px;
-    margin-top: 54px;
+    margin-top: 38px;
   }
 
   .rassadka_m {
-    display: block;
+    display: flex;
     align-self: center;
+    position: relative;
   }
 
   .rassadka__svg {
@@ -1871,18 +1980,25 @@ svg[data-v-06dbd032] {
     display: flex;
   }
 
-  .sun {
-    height: 172px;
-    top: 14px;
-    left: -10px;
+  .brd {
+    display: flex;
+    align-items: center;
   }
 
-  .constellation {
-    width: 164px;
-    top: 66px;
-    right: -6px;
+  .brd__img {
+    position: relative;
+    top: 60px;
   }
 
+  .mak {
+    display: flex;
+    margin: 6px 19px 0 19px;
+  }
+
+  .rassadka {
+    margin: 40px auto 0 auto;
+  }
+  
   .rassadka__l,
   .rassadka__r {
     display: none;
@@ -1905,6 +2021,9 @@ svg[data-v-06dbd032] {
     min-width: 906px;
   }
 
+  .rassadka__mv svg {
+    min-width: 971px;
+  }
   .rassadka__mu {
     display: none;
   }
@@ -1916,7 +2035,9 @@ svg[data-v-06dbd032] {
 
   .rassadka__tavrika svg {
     min-width: 1044px;
-
+  }
+  .rassadka_leg {
+    display: none;
   }
 }
 
@@ -1961,7 +2082,9 @@ svg[data-v-06dbd032] {
   }
 }
 
-
+.rassadka {
+  margin: 51px 50px 0;
+}
 
 .fs-menu.mobile-menu-hidden {
   display: none;
@@ -1975,18 +2098,63 @@ svg[data-v-06dbd032] {
 @media screen and (max-width: 1400px) {
 
   .stars-1.dsktp,
-  .stars-2.dsktp {
-    display: none;
-  }
-
-}
-
-@media screen and (max-width: 1400px) {
-
+  .stars-2.dsktp,
   .stars-3.dsktp,
   .star.dsktp,
-  .stars-6.dsktp {
+  .stars-6.dsktp,
+  .moon.dsktp,
+  .hand.dsktp {
     display: none;
   }
 
+  .rest__back {
+    position: relative;
+    margin: 0 auto;
+    padding-top: 25px;
+    left: -5px;
+  }
+
+  .rest__back-btn {
+    position: initial;
+  }
+
 }
+
+@media screen and (max-width: 1880px) {
+  .rassadka__legend_dwn {
+    top: 455px;
+  }
+}
+
+@media screen and (max-width: 1250px) {
+  .rassadka {
+    margin: 51px 150px 0;
+  }
+
+  .rassadka__legend_dwn {
+    right: 150px;
+  }
+
+  .sun {
+    height: 172px;
+    top: 14px;
+    left: -10px;
+  }
+
+  .constellation {
+    width: 164px;
+    top: 66px;
+    right: -6px;
+  }
+
+  .tl2, .tr1,
+  .r2, .r3,
+  .l1, .l2, .l3 {
+    display: none;
+  }
+}
+
+.rassadka__mv {
+  align-self: center;
+}
+
