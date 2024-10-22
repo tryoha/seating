@@ -8,7 +8,7 @@
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
 
-html {
+ html {
   line-height: 1.15;
   /* 1 */
   -webkit-text-size-adjust: 100%;
@@ -1635,15 +1635,19 @@ svg[data-v-06dbd032] {
 }
 .tl1 {
   left: 0;
+  top: 15px;
 }
 .tl2 {
   left: 260px;
+  top: 15px;
 }
 .tr1 {
   right: 260px;
+  top: 15px;
 }
 .tr2 {
   right: 0;
+  top: 15px;
 }
 .r1 {
   top: 300px;
@@ -1670,6 +1674,14 @@ right: 0;
   left: 0;
 }
 
+.rassadka_leg  {
+  display: flex;
+  align-self: center;
+  padding: 45px 0 68px;
+}
+.mak {
+  display: none;
+}
 
 @media screen and (max-width:1536px) {
   .sun {
@@ -1732,6 +1744,16 @@ right: 0;
   .rassadka__legend {
     margin-top: 80px;
   }
+  
+  .tl1, .tr2 {
+    max-width: calc(143px + 6%);
+  }
+
+  .r1 {
+    max-width: calc(65px + 6%);
+    top: 425px;
+  }
+
 }
 
 .fs-menu[data-v-6bc6fa74],
@@ -1849,10 +1871,12 @@ right: 0;
   width: fit-content;
 }
 
+.rassadka {
+  margin: 51px 250px 0;
+}
+
 .rassadka_m {
-  position: absolute;
-  top: 1020px;
-  right: 820px;
+  display: none;
 }
 
 .legend__bal {
@@ -1865,6 +1889,7 @@ right: 0;
 
 .rest__back {
   position: relative;
+  left: 65px;
 }
 
 .rest__back-btn {
@@ -1891,13 +1916,18 @@ right: 0;
   position: relative;
 }
 
+.brd {
+  display: none;
+}
+
+
 @media (max-width: 699px) {
   .header__wrapper[data-v-37affc4c] {
     gap: 20px;
   }
 
   .rest {
-    padding-top: 172px;
+    padding-top: 70px;
   }
 
   .rest__title img {
@@ -1911,12 +1941,13 @@ right: 0;
   .rassadka {
     flex-direction: column;
     gap: 23px;
-    margin-top: 54px;
+    margin-top: 38px;
   }
 
   .rassadka_m {
-    display: block;
+    display: flex;
     align-self: center;
+    position: relative;
   }
 
   .rassadka__svg {
@@ -1949,8 +1980,25 @@ right: 0;
     display: flex;
   }
 
+  .brd {
+    display: flex;
+    align-items: center;
+  }
 
+  .brd__img {
+    position: relative;
+    top: 60px;
+  }
 
+  .mak {
+    display: flex;
+    margin: 6px 19px 0 19px;
+  }
+
+  .rassadka {
+    margin: 40px auto 0 auto;
+  }
+  
   .rassadka__l,
   .rassadka__r {
     display: none;
@@ -1973,6 +2021,9 @@ right: 0;
     min-width: 906px;
   }
 
+  .rassadka__mv svg {
+    min-width: 971px;
+  }
   .rassadka__mu {
     display: none;
   }
@@ -1984,6 +2035,9 @@ right: 0;
 
   .rassadka__tavrika svg {
     min-width: 1044px;
+  }
+  .rassadka_leg {
+    display: none;
   }
 }
 
@@ -2028,7 +2082,9 @@ right: 0;
   }
 }
 
-
+.rassadka {
+  margin: 51px 50px 0;
+}
 
 .fs-menu.mobile-menu-hidden {
   display: none;
@@ -2055,6 +2111,7 @@ right: 0;
     position: relative;
     margin: 0 auto;
     padding-top: 25px;
+    left: -5px;
   }
 
   .rest__back-btn {
@@ -2070,9 +2127,14 @@ right: 0;
 }
 
 @media screen and (max-width: 1250px) {
+  .rassadka {
+    margin: 51px 150px 0;
+  }
+
   .rassadka__legend_dwn {
     right: 150px;
   }
+
   .sun {
     height: 172px;
     top: 14px;
@@ -2084,8 +2146,15 @@ right: 0;
     top: 66px;
     right: -6px;
   }
+
+  .tl2, .tr1,
+  .r2, .r3,
+  .l1, .l2, .l3 {
+    display: none;
+  }
 }
 
 .rassadka__mv {
   align-self: center;
 }
+
