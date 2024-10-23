@@ -8,7 +8,7 @@
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
 
- html {
+html {
   line-height: 1.15;
   /* 1 */
   -webkit-text-size-adjust: 100%;
@@ -1414,6 +1414,10 @@ svg[data-v-06dbd032] {
   color: var(--color-white)
 }
 
+.rassadka {
+  margin: 51px 50px 0;
+}
+
 @media screen and (max-width:1279px) {
   .btn-primary-booking {
     font-size: 14px;
@@ -1633,52 +1637,63 @@ svg[data-v-06dbd032] {
   position: absolute;
   z-index: -1;
 }
+
 .tl1 {
   left: 0;
   top: 15px;
 }
+
 .tl2 {
   left: 260px;
   top: 15px;
 }
+
 .tr1 {
   right: 260px;
   top: 15px;
 }
+
 .tr2 {
   right: 0;
   top: 15px;
 }
+
 .r1 {
   top: 300px;
   right: 0;
 }
+
 .r2 {
   top: 550px;
   right: 0;
 }
+
 .r3 {
-top: 820px;
-right: 0;
+  top: 820px;
+  right: 0;
 }
+
 .l1 {
   top: 300px;
   left: 0;
 }
+
 .l2 {
   top: 550px;
   left: 0;
 }
+
 .l3 {
   top: 820px;
   left: 0;
 }
 
-.rassadka_leg  {
+.rassadka_leg {
   display: flex;
   align-self: center;
   padding: 35px 0 54px;
 }
+
 .mak {
   display: none;
 }
@@ -1727,6 +1742,7 @@ right: 0;
   .rassadka,
   .rassadka_mu {
     max-width: 100%;
+    margin: 51px 200px 0;
   }
 
   .rassadka__l {
@@ -1744,8 +1760,9 @@ right: 0;
   .rassadka__legend {
     margin-top: 80px;
   }
-  
-  .tl1, .tr2 {
+
+  .tl1,
+  .tr2 {
     max-width: calc(143px + 6%);
   }
 
@@ -1998,7 +2015,7 @@ right: 0;
   .rassadka {
     margin: 40px auto 0 auto;
   }
-  
+
   .rassadka__l,
   .rassadka__r {
     display: none;
@@ -2024,6 +2041,7 @@ right: 0;
   .rassadka__mv svg {
     min-width: 971px;
   }
+
   .rassadka__mu {
     display: none;
   }
@@ -2036,6 +2054,7 @@ right: 0;
   .rassadka__tavrika svg {
     min-width: 1044px;
   }
+
   .rassadka_leg {
     display: none;
   }
@@ -2082,9 +2101,6 @@ right: 0;
   }
 }
 
-.rassadka {
-  margin: 51px 50px 0;
-}
 
 .fs-menu.mobile-menu-hidden {
   display: none;
@@ -2147,9 +2163,13 @@ right: 0;
     right: -6px;
   }
 
-  .tl2, .tr1,
-  .r2, .r3,
-  .l1, .l2, .l3 {
+  .tl2,
+  .tr1,
+  .r2,
+  .r3,
+  .l1,
+  .l2,
+  .l3 {
     display: none;
   }
 }
@@ -2157,4 +2177,3 @@ right: 0;
 .rassadka__mv {
   align-self: center;
 }
-
