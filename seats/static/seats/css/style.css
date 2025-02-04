@@ -1541,7 +1541,7 @@ svg[data-v-06dbd032] {
 .sun {
   position: absolute;
   left: 0;
-  top: 17px;
+  top: 0;
   z-index: -1;
 }
 
@@ -1561,8 +1561,8 @@ svg[data-v-06dbd032] {
 
 .constellation {
   position: absolute;
-  right: 37.1px;
-  top: 139px;
+  right: 0;
+  top: 0;
   z-index: -1;
 }
 
@@ -1582,8 +1582,8 @@ svg[data-v-06dbd032] {
 
 .moon {
   position: absolute;
-  right: 30.54px;
-  top: 829px;
+  right: 0;
+  top: 561px;
   z-index: -1;
 }
 
@@ -1600,8 +1600,8 @@ svg[data-v-06dbd032] {
 
 .hand {
   position: absolute;
-  left: 52px;
-  top: 830px;
+  left: 0;
+  top: 505px;
   z-index: -1;
 }
 
