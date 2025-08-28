@@ -1915,6 +1915,10 @@ svg[data-v-06dbd032] {
   padding: 8px 0;
 }
 
+.rest {
+  background-color: #fff;
+}
+
 @media (max-width: 699px) {
   .header__wrapper[data-v-37affc4c] {
     gap: 20px;
@@ -1930,6 +1934,10 @@ svg[data-v-06dbd032] {
 
   .rest__descr {
     padding: 0 27px 5px;
+  }
+
+  .rest__descr__img {
+    width: 260px;
   }
 
   .rassadka {
@@ -1968,7 +1976,7 @@ svg[data-v-06dbd032] {
   }
 
   .stars-7 {
-    max-width: 332.79px;
+    width: 317px;
     align-self: center;
     display: flex;
   }
