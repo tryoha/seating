@@ -1511,9 +1511,18 @@ svg[data-v-06dbd032] {
   flex-direction: column;
 }
 
+.rassadka__lm {
+  margin: 155px 60px 0 0px;
+}
+
 .fig_l {
   padding-bottom: 20px;
   height: 350px;
+}
+
+.fig__mu {
+  padding-bottom: 20px;
+  height: 315px;
 }
 
 .fig_descr {
@@ -1526,9 +1535,18 @@ svg[data-v-06dbd032] {
   flex-direction: column;
 }
 
+.rassadka__rm {
+  margin: 160px 0 0 60px;
+}
+
 .fig_r {
   padding-bottom: 20px;
   height: 350px;
+}
+
+.fig__mu {
+  padding-bottom: 20px;
+  height: 194px;
 }
 
 .rassadka__legend {
