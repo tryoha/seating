@@ -94,6 +94,7 @@ abbr[title] {
   /* 1 */
   text-decoration: underline;
   /* 2 */
+  -webkit-text-decoration: underline dotted;
   text-decoration: underline dotted;
   /* 2 */
 }
@@ -1126,14 +1127,27 @@ svg[data-v-06dbd032] {
   }
 
   .opened .bottom-menu__popup-list[data-v-89cc7679] {
+    -webkit-animation: slideUp-89cc7679 .5s ease-out forwards;
     animation: slideUp-89cc7679 .5s ease-out forwards;
+    -webkit-animation-delay: .1s;
     animation-delay: .1s;
     bottom: -100%
   }
 
   .closed .bottom-menu__popup-list[data-v-89cc7679] {
+    -webkit-animation: slideDown-89cc7679 .5s ease-in forwards;
     animation: slideDown-89cc7679 .5s ease-in forwards;
     bottom: -100%
+  }
+
+  @-webkit-keyframes slideUp-89cc7679 {
+    0% {
+      bottom: -100%
+    }
+
+    to {
+      bottom: 75px
+    }
   }
 
   @keyframes slideUp-89cc7679 {
@@ -1143,6 +1157,16 @@ svg[data-v-06dbd032] {
 
     to {
       bottom: 75px
+    }
+  }
+
+  @-webkit-keyframes slideDown-89cc7679 {
+    0% {
+      bottom: 75px
+    }
+
+    to {
+      bottom: -100%
     }
   }
 
@@ -1483,6 +1507,17 @@ svg[data-v-06dbd032] {
 
 .rassadka__l {
   margin: 74px 84px 0 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.fig_l {
+  padding-bottom: 20px;
+  height: 350px;
+}
+
+.fig_descr {
+  height: 27px;
 }
 
 .rassadka__r {
@@ -1491,8 +1526,13 @@ svg[data-v-06dbd032] {
   flex-direction: column;
 }
 
+.fig_r {
+  padding-bottom: 20px;
+  height: 350px;
+}
+
 .rassadka__legend {
-  margin-top: 135px;
+  margin-top: 60px;
 }
 
 .places {
@@ -1549,6 +1589,20 @@ svg[data-v-06dbd032] {
   position: absolute;
   left: 318px;
   top: 151px;
+  z-index: -1;
+}
+
+.decor-l {
+  position: absolute;
+  left: 34px;
+  top: 155px;
+  z-index: -1;
+}
+
+.decor-r {
+  position: absolute;
+  right: 34px;
+  top: 155px;
   z-index: -1;
 }
 
@@ -1805,6 +1859,7 @@ svg[data-v-06dbd032] {
   margin-top: 50px;
   padding: 15px 25px;
   width: -moz-fit-content;
+  width: -webkit-fit-content;
   width: fit-content;
 }
 
@@ -1846,6 +1901,18 @@ svg[data-v-06dbd032] {
   margin-right: 5px;
   top: 2px;
   position: relative;
+}
+
+.rest__descr {
+  padding: 10px 0 15px;
+}
+
+.rest_descr__txt {
+  margin: 0;
+}
+
+.rest__descr__img {
+  padding: 8px 0;
 }
 
 @media (max-width: 699px) {
@@ -2030,6 +2097,7 @@ svg[data-v-06dbd032] {
   .rassadka__legend_dwn {
     right: 150px;
   }
+
   .sun {
     height: 172px;
     top: 14px;
