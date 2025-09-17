@@ -1552,9 +1552,6 @@ svg[data-v-06dbd032] {
   margin: 160px 0 0 60px;
 }
 
-.horse {
-  padding-top: 45px;
-}
 .fig_r {
   padding-bottom: 20px;
   height: 350px;
@@ -1981,6 +1978,10 @@ svg[data-v-06dbd032] {
   z-index: -1;
 }
 
+.decor {
+  display: none;
+}
+
 @media screen and (max-width: 1880px) {
   .rassadka__legend_dwn {
     top: 455px;
@@ -1988,6 +1989,7 @@ svg[data-v-06dbd032] {
 }
 
 @media screen and (max-width: 1400px) {
+
   .stars-1.dsktp,
   .stars-2.dsktp,
   .stars-3.dsktp,
@@ -2057,15 +2059,15 @@ svg[data-v-06dbd032] {
   }
 
   .rest {
-    padding-top: 172px;
+    padding-top: 30px;
   }
 
   .rest__title img {
-    height: 22px;
+    height: 34px;
   }
 
   .rest__descr {
-    padding: 0 27px 5px;
+    padding: 0 27px 25px;
   }
 
   .rest__descr__img {
@@ -2075,7 +2077,7 @@ svg[data-v-06dbd032] {
   .rassadka {
     flex-direction: column;
     gap: 23px;
-    margin-top: 54px;
+    margin-top: 23px;
   }
 
   .rassadka_m {
@@ -2098,8 +2100,6 @@ svg[data-v-06dbd032] {
 
   .places__btns {
     overflow: auto;
-    gap: 25px;
-    justify-content: initial;
   }
 
   .places__title,
@@ -2141,12 +2141,25 @@ svg[data-v-06dbd032] {
   }
 
   .rassadka_mu {
-    gap: 23px;
-    margin: 39px 0 0 0;
+    margin: 54px 0 0 0;
   }
 
   .rassadka__tavrika svg {
     min-width: 1044px;
+  }
+
+  .places__title h3 {
+    margin-top: 0;
+  }
+
+  .decor {
+    display: block;
+    width: 100%;
+  }
+
+  .decor__image {
+    width: 100%;
+    height: auto;
   }
 }
 
