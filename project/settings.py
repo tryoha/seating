@@ -25,7 +25,7 @@ SECRET_KEY = "django-insecure-wm_i!iro_fb*7_#n6&j87ykt8l9vcpy2@n1yip38qo=*$20)a2
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ["seat.hotel-portomare.ru", "www.seat.hotel-portomare.ru"]
+ALLOWED_HOSTS = ["seat.romantikarkhyz.ru", "www.seat.romantikarkhyz.ru"]
 
 
 # Application definition

@@ -9,24 +9,14 @@ def index(request):
     return render(request, "seats/index.html", {"places": places})
 
 
-def argo_index(request):
+def romantic_index(request):
     places = Place.objects.filter(available=True)
-    seats = Seat.objects.filter(place__name="Арго")
+    seats = Seat.objects.filter(place__name="Romatic")
     context: dict[str, BaseManager[Place]] = {"places": places}
 
     for seat in seats:
         context[seat.seat] = {"place": seat.place, "available": seat.available}
 
-    return render(request, "seats/argo.html", context)
+    return render(request, "seats/romantic.html", context)
 
-
-def liner_index(request):
-    places = Place.objects.filter(available=True)
-    seats = Seat.objects.filter(place__name="Лайнер")
-    context: dict[str, BaseManager[Place]] = {"places": places}
-
-    for seat in seats:
-        context[seat.seat] = {"place": seat.place, "available": seat.available}
-
-    return render(request, "seats/liner.html", context)
 

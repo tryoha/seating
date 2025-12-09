@@ -383,8 +383,8 @@ template {
 
 :root {
   --color-dark: #171717;
-  --color-sand: #b61c1c;
-  --color-dark-sand: #790d0d;
+  --color-sand: #CB8A7A;
+  --color-dark-sand: #2E2E2E;
   --color-gray: #9b9b9b;
   --color-red: #db0000;
   --color-white: #fff;
@@ -1398,6 +1398,10 @@ svg[data-v-06dbd032] {
   opacity: 1;
 }
 
+.rassadka__legend_mu {
+  max-width: 95%;
+}
+
 @media (max-width: 1280px) {
   .main-menu__list[data-v-37affc4c] {
     display: none;
@@ -1762,13 +1766,11 @@ svg[data-v-06dbd032] {
   .rassadka__l {
     display: flex;
     flex-direction: column;
-    max-width: calc(172px - 3%);
-    margin: 74px 0 0 0;
+    max-width: calc(278px - 3%);
   }
 
   .rassadka__r {
-    max-width: calc(186px - 3%);
-    margin: 74px 0 0 0;
+    max-width: calc(278px - 3%);
   }
 
   .rassadka__legend {
@@ -1926,7 +1928,7 @@ svg[data-v-06dbd032] {
 }
 
 .rest__back-btn::before {
-  content: url("../img/ballroom/arrow_l.svg");
+  content: url("../img/romantic/arrow-rmtc-l.svg");
   margin-right: 5px;
   top: 2px;
   position: relative;
@@ -2026,6 +2028,14 @@ svg[data-v-06dbd032] {
     width: 164px;
     top: 66px;
     right: -6px;
+  }
+
+  .rassadka__l {
+    max-width: calc(150px - 3%);
+  }
+
+  .rassadka__r {
+    max-width: calc(150px - 3%);
   }
 }
 
@@ -2155,10 +2165,12 @@ svg[data-v-06dbd032] {
   .decor {
     display: block;
     width: 100%;
+    padding-top: 85px;
+    text-align: center;
   }
 
   .decor__image {
-    width: 100%;
+    width: 260px;
     height: auto;
   }
 }
