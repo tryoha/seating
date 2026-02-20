@@ -406,7 +406,9 @@ template {
   --color-room-grey: #464646;
   --color-active-light-gray: #d9d9d9;
   --color-calendar-gray: #ebebeb;
-  --color-footer-gray: #e9e9e9
+  --color-footer-gray: #e9e9e9;
+  --color-pink: #F26E83;
+  --color-pink-hover: #F26E83;
 }
 
 @font-face {
@@ -1414,6 +1416,11 @@ svg[data-v-06dbd032] {
   color: var(--color-white)
 }
 
+.btn-mart,
+.btn-mart:hover {
+  background-color: var(--color-pink);
+}
+
 @media screen and (max-width:1279px) {
   .btn-primary-booking {
     font-size: 14px;
@@ -1447,7 +1454,7 @@ svg[data-v-06dbd032] {
 
 
 .rest {
-  padding-top: 154px;
+  padding-top: 115px;
   display: flex;
   flex-direction: column;
   width: 650px;
@@ -1769,13 +1776,13 @@ svg[data-v-06dbd032] {
   left: -287px;
   bottom: 37px;
   position: absolute;
-  color: #C8AA6D;
+  color: var(--color-pink);
   font-weight: 500;
   font-size: 14px;
 }
 
 .rest__back-btn:hover {
-  color: #b48d40;
+  color: var(--color-pink-hover);
 }
 
 .rest__back a {
@@ -1783,7 +1790,7 @@ svg[data-v-06dbd032] {
 }
 
 .rest__back-btn::before {
-  content: url("../img/ballroom/arrow_l.svg");
+  content: url("../img/ballroom/arrow_l8m.svg");
   margin-right: 5px;
   top: 2px;
   position: relative;
@@ -1815,6 +1822,36 @@ svg[data-v-06dbd032] {
 .container img {
   z-index: -1;
 }
+
+
+.rest__title .rest__title__h1 {
+  font-weight: 400;
+  font-size: 50px;
+  text-transform: uppercase;
+  color: #F05A72;
+  margin: 30px 30px 0px;
+}
+
+.fleft,
+.fright {
+  position: absolute;
+  height: 100%;
+}
+
+.fleft {
+  left: 0;
+}
+
+
+.fright {
+  right: 0;
+}
+
+
+.decor__image {
+  display: none;
+}
+
 
 @media screen and (max-width: 1880px) {
   .rassadka__legend_dwn {
@@ -1853,7 +1890,7 @@ svg[data-v-06dbd032] {
   }
 
   .hand {
-    max-width:calc(370px - 10%);
+    max-width: calc(370px - 10%);
     top: 756px;
   }
 
@@ -1890,15 +1927,8 @@ svg[data-v-06dbd032] {
 
 @media screen and (max-width: 1400px) {
 
-  .stars-1.dsktp,
-  .stars-2.dsktp,
-  .stars-3.dsktp,
-  .star.dsktp,
-  .stars-6.dsktp,
-  .moon.dsktp,
-  .hand.dsktp,
-  .flvrs_top, 
-  .rassadka__mob_decor {
+  .fleft,
+  .fright {
     display: none;
   }
 
@@ -1919,6 +1949,7 @@ svg[data-v-06dbd032] {
   .rassadka__legend_dwn {
     right: 150px;
   }
+
   .rassadka__mob_decor {
     display: none;
   }
@@ -2011,7 +2042,11 @@ svg[data-v-06dbd032] {
     display: flex;
   }
 
-
+  .decor__image {
+    display: block;
+    right: 0;
+    position: absolute;
+  }
 
   .rassadka__l,
   .rassadka__r {
@@ -2055,6 +2090,7 @@ svg[data-v-06dbd032] {
 
   .rassadka__mob_decor img {
     display: block;
+    width: 100%;
   }
 
   .flvrs_top {
